@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    //NODEMON WITH BABEL
     "start": "nodemon --watch server --exec babel-node -- server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,9 +12,15 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.0",
-    "babel-preset-es2015": "^6.24.0"
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.3.2",
+    "webpack-dev-middleware": "^1.10.1"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
